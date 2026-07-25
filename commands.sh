@@ -2,6 +2,8 @@ yay -S waybar kitty nvim neofetch rofi grim slurp wl-clipboard
 sudo pacman -S zsh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 cp -r ~/Downloads/hyprdots-green/.config/nvim ~/.config
 cp -r ~/Downloads/hyprdots-green/.config/waybar/ ~/.config
